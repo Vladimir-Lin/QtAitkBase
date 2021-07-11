@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+    <namespace>com.neutrino.qtuuid</namespace>
+    <virtualFolder>QtUUID</virtualFolder>
+    <customFilter name="Qt UUID 1.6.0">
+        <filterAttribute>QtUUID</filterAttribute>
+        <filterAttribute>1.6.0</filterAttribute>
+    </customFilter>
+    <filterSection>
+        <filterAttribute>QtUUID</filterAttribute>
+        <filterAttribute>1.6.0</filterAttribute>
+        <toc>
+            <section title="Qt UUID Manual" ref="index.html">
+                <section title="English" ref="en/index.html"/>
+                <section title="Traditional Chinese" ref="tw/index.html"/>
+                <section title="Simplified Chinese" ref="cn/index.html"/>
+            </section>
+        </toc>
+        <keywords>
+            <keyword name="UUID" id="CIOS::QtUUID" ref="index.html"/>
+            <keyword name="SUID （正體中文）" id="CIOS::QtUuid::SUID::TW" ref="tw/index.html#SUID"/>
+            <keyword name="UUIDs （正體中文）" id="CIOS::QtUuid::UUIDs::TW" ref="tw/index.html#UUIDs"/>
+            <keyword name="QtUuid （正體中文）" id="CIOS::QtUuid::QtUuid::TW" ref="tw/index.html#QtUuid"/>
+            <keyword name="Uniqueness （正體中文）" id="CIOS::QtUuid::Uniqueness::TW" ref="tw/index.html#Uniqueness"/>
+            <keyword name="UniqueUuid （正體中文）" id="CIOS::QtUuid::UniqueUuid::TW" ref="tw/index.html#UniqueUuid"/>
+            <keyword name="toByteArray （正體中文）" id="CIOS::QtUuid::toByteArray::TW" ref="tw/index.html#toByteArray"/>
+            <keyword name="toUUIDs （正體中文）" id="CIOS::QtUuid::toUUIDs::TW" ref="tw/index.html#toUUIDs"/>
+            <keyword name="UuidBoolean （正體中文）" id="CIOS::QtUuid::UuidBoolean::TW" ref="tw/index.html#UuidBoolean"/>
+            <keyword name="UuidInt （正體中文）" id="CIOS::QtUuid::UuidInt::TW" ref="tw/index.html#UuidInt"/>
+            <keyword name="UuidAddInt （正體中文）" id="CIOS::QtUuid::UuidAddInt::TW" ref="tw/index.html#UuidAddInt"/>
+            <keyword name="toVariants （正體中文）" id="CIOS::QtUuid::toVariants::TW" ref="tw/index.html#toVariants"/>
+            <keyword name="FromVariants （正體中文）" id="CIOS::QtUuid::FromVariants::TW" ref="tw/index.html#FromVariants"/>
+            <keyword name="toStrings （正體中文）" id="CIOS::QtUuid::toStrings::TW" ref="tw/index.html#toStrings"/>
+            <keyword name="MakePair （正體中文）" id="CIOS::QtUuid::MakePair::TW" ref="tw/index.html#MakePair"/>
+            <keyword name="TearApart （正體中文）" id="CIOS::QtUuid::TearApart::TW" ref="tw/index.html#TearApart"/>
+            <keyword name="Sort （正體中文）" id="CIOS::QtUuid::Sort::TW" ref="tw/index.html#Sort"/>
+        </keywords>
+        <files>
+            <file>*.css</file>
+            <file>*.html</file>
+            <file>images/*</file>
+            <file>en/*</file>
+            <file>cn/*</file>
+            <file>tw/*</file>
+        </files>
+    </filterSection>
+</QtHelpProject>
