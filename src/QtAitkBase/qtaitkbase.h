@@ -47,9 +47,6 @@ QT_BEGIN_NAMESPACE
 #      define Q_QTAITKBASE_EXPORT
 #endif
 //////////////////////////////////////////////////////////////////////////////
-#define QT_AITK_BASE_LIB 1
-#define QT_AITK_BASE_VERSION 202107112301
-//////////////////////////////////////////////////////////////////////////////
 typedef long long                        TUID                                ; // Timestamp for Star date calendar
 typedef long double                      MUID                                ; // Timestamp for floating Star date calendar
 typedef int                              CUID                                ; // Type IDs : Language ID , Type ID and so on
@@ -298,8 +295,17 @@ class Q_QTAITKBASE_EXPORT TimeBits                                           ;
 class Q_QTAITKBASE_EXPORT Enabler                                            ;
 //////////////////////////////////////////////////////////////////////////////
 
+//////////////////////////////////////////////////////////////////////////////
 
+//////////////////////////////////////////////////////////////////////////////
 
+//////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+typedef QList < QByteArray   > ByteArrays                                    ; // QByteArray lists
+typedef QList < QVariant     > VarArgs                                       ; // Variable paraments
+typedef QList < VarArgs      > VarArgLists                                   ; // paraments list
+typedef QList < unsigned int > Colors                                        ; // Color list
 //////////////////////////////////////////////////////////////////////////////
 /****************************************************************************\
  * Destroyer is a class that helps to destroy any classes which does not    *
@@ -343,7 +349,7 @@ class Q_QTAITKBASE_EXPORT Anything                                           {
     //////////////////////////////////////////////////////////////////////////
     SUID                          uuid                                       ;
     int                           type                                       ;
-    QVariant::Type                solo                                       ;
+    QMetaType::Type               solo                                       ;
     QStringList                   strings                                    ;
     UUIDs                         uuids                                      ;
     VarArgs                       arguments                                  ;

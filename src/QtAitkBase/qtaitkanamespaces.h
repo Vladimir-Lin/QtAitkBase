@@ -1,16 +1,28 @@
-/*****************************************************************************\
- *                   Neutrino Exciton System for CIOS                        *
- *                                                                           *
- * Version is 2016-01-11-13-44-00, Author is Brian Lin, works only Qt 5.5.0  *
- *                                                                           *
- *                          Namespace Enumerations                           *
- *                                                                           *
-\*****************************************************************************/
-
-#ifndef NNAMESPACES
-#define NNAMESPACES
-
-namespace N {
+/****************************************************************************
+ *
+ * Copyright (C) 2001 ~ 2021
+ * 
+ *  Neutrino International Inc.
+ *  Oriphase Space Travelling Industry
+ *
+ * Author   : Brian Lin ( Foxman , Vladimir Lin , Vladimir Forest )
+ * E-mail   : lin.foxman@gmail.com
+ *          : lin.vladimir@gmail.com
+ *          : wolfram_lin@yahoo.com
+ *          : wolfram_lin@sina.com
+ *          : wolfram_lin@163.com
+ * Skype    : wolfram_lin
+ * WeChat   : 153-0271-7160
+ * WhatsApp : 153-0271-7160
+ * QQ       : lin.vladimir@gmail.com (2107437784)
+ * LINE     : lin-foxman
+ *
+ ****************************************************************************/
+//////////////////////////////////////////////////////////////////////////////
+#ifndef QT_AITK_BASE_NAMESPACES_H
+#define QT_AITK_BASE_NAMESPACES_H
+//////////////////////////////////////////////////////////////////////////////
+namespace N                                                                  {
 
   typedef enum      {
     InitAll     = 0 ,
@@ -1609,199 +1621,6 @@ namespace N {
       /* Russian  */
       Verst       = 801  /* 1.0668 Kilometer */
     } Unit             ;
-
-    namespace MKSA
-    {
-
-      namespace Constants
-      {
-        const long double SpeedOfLight       = GSL_CONST_MKSA_SPEED_OF_LIGHT            ;
-        const long double VacuumPermeability = GSL_CONST_MKSA_VACUUM_PERMEABILITY       ;
-        const long double VacuumPermittivity = GSL_CONST_MKSA_VACUUM_PERMITTIVITY       ;
-        const long double Plancks            = GSL_CONST_MKSA_PLANCKS_CONSTANT_H        ;
-        const long double PlancksHBAR        = GSL_CONST_MKSA_PLANCKS_CONSTANT_HBAR     ;
-        const long double Avogadro           = GSL_CONST_NUM_AVOGADRO                   ;
-        const long double Faraday            = GSL_CONST_MKSA_FARADAY                   ;
-        const long double Boltzmann          = GSL_CONST_MKSA_BOLTZMANN                 ;
-        const long double MolarGas           = GSL_CONST_MKSA_MOLAR_GAS                 ;
-        const long double GasVolume          = GSL_CONST_MKSA_STANDARD_GAS_VOLUME       ;
-        const long double StefanBoltzmann    = GSL_CONST_MKSA_STEFAN_BOLTZMANN_CONSTANT ;
-        const long double Gauss              = GSL_CONST_MKSA_GAUSS                     ;
-      }
-
-      namespace Astronomy
-      {
-        const long double AU        = GSL_CONST_MKSA_ASTRONOMICAL_UNIT      ;
-        const long double G         = GSL_CONST_MKSA_GRAVITATIONAL_CONSTANT ;
-        const long double LightYear = GSL_CONST_MKSA_LIGHT_YEAR             ;
-        const long double Parsec    = GSL_CONST_MKSA_PARSEC                 ;
-        const long double GravAccel = GSL_CONST_MKSA_GRAV_ACCEL             ;
-        const long double SolarMass = GSL_CONST_MKSA_SOLAR_MASS             ;
-      }
-
-      namespace Atomic
-      {
-        const long double ElectronCharge         = GSL_CONST_MKSA_ELECTRON_CHARGE          ;
-        const long double ElectronVolt           = GSL_CONST_MKSA_ELECTRON_VOLT            ;
-        const long double ElectronMass           = GSL_CONST_MKSA_MASS_ELECTRON            ;
-        const long double AMU                    = GSL_CONST_MKSA_UNIFIED_ATOMIC_MASS      ;
-        const long double MuonMass               = GSL_CONST_MKSA_MASS_MUON                ;
-        const long double ProtonMass             = GSL_CONST_MKSA_MASS_PROTON              ;
-        const long double NeutronMass            = GSL_CONST_MKSA_MASS_NEUTRON             ;
-        const long double FineStructure          = GSL_CONST_NUM_FINE_STRUCTURE            ;
-        const long double Rydberg                = GSL_CONST_MKSA_RYDBERG                  ;
-        const long double BohrRadius             = GSL_CONST_MKSA_BOHR_RADIUS              ;
-        const long double Angstrom               = GSL_CONST_MKSA_ANGSTROM                 ;
-        const long double Barn                   = GSL_CONST_MKSA_BARN                     ;
-        const long double BohrMagneton           = GSL_CONST_MKSA_BOHR_MAGNETON            ;
-        const long double NuclearMagneton        = GSL_CONST_MKSA_NUCLEAR_MAGNETON         ;
-        const long double ElectronMagneticMoment = GSL_CONST_MKSA_ELECTRON_MAGNETIC_MOMENT ;
-        const long double ProtonMagneticMoment   = GSL_CONST_MKSA_PROTON_MAGNETIC_MOMENT   ;
-        const long double ThomsonCrossSection    = GSL_CONST_MKSA_THOMSON_CROSS_SECTION    ;
-        const long double Debye                  = GSL_CONST_MKSA_DEBYE                    ;
-      }
-
-      namespace Time
-      {
-        const long double Minute = GSL_CONST_MKSA_MINUTE ;
-        const long double Hour   = GSL_CONST_MKSA_HOUR   ;
-        const long double Day    = GSL_CONST_MKSA_DAY    ;
-        const long double Week   = GSL_CONST_MKSA_WEEK   ;
-      }
-
-      namespace Unit
-      {
-        const long double Micron     = GSL_CONST_MKSA_MICRON  ;
-        const long double Micrometre = GSL_CONST_MKSA_MICRON  ;
-        const long double Inch       = GSL_CONST_MKSA_INCH    ;
-        const long double Foot       = GSL_CONST_MKSA_FOOT    ;
-        const long double Yard       = GSL_CONST_MKSA_YARD    ;
-        const long double Mile       = GSL_CONST_MKSA_MILE    ;
-        const long double Mil        = GSL_CONST_MKSA_MIL     ;
-      }
-
-      namespace Nautical
-      {
-        const long double Mile   = GSL_CONST_MKSA_NAUTICAL_MILE ;
-        const long double Fathom = GSL_CONST_MKSA_FATHOM        ;
-        const long double Knot   = GSL_CONST_MKSA_KNOT          ;
-      }
-
-      namespace Speed
-      {
-        const long double KPH = GSL_CONST_MKSA_KILOMETERS_PER_HOUR ;
-        const long double MPH = GSL_CONST_MKSA_MILES_PER_HOUR      ;
-      }
-
-      namespace Printer
-      {
-        const long double Point     = GSL_CONST_MKSA_POINT    ;
-        const long double TextPoint = GSL_CONST_MKSA_TEXPOINT ;
-      }
-
-      namespace Volume
-      {
-        const long double Hectare = GSL_CONST_MKSA_HECTARE ;
-        const long double Acre    = GSL_CONST_MKSA_ACRE    ;
-        const long double Liter   = GSL_CONST_MKSA_LITER   ;
-        const long double Quart   = GSL_CONST_MKSA_QUART   ;
-        const long double Pint    = GSL_CONST_MKSA_PINT    ;
-      }
-
-      namespace Gallon
-      {
-        const long double Us       = GSL_CONST_MKSA_US_GALLON       ;
-        const long double Canadian = GSL_CONST_MKSA_CANADIAN_GALLON ;
-        const long double Uk       = GSL_CONST_MKSA_UK_GALLON       ;
-      }
-
-      namespace Weight
-      {
-        const long double Pound     = GSL_CONST_MKSA_POUND_MASS ;
-        const long double Ounce     = GSL_CONST_MKSA_OUNCE_MASS ;
-        const long double Ton       = GSL_CONST_MKSA_TON        ;
-        const long double MetricTon = GSL_CONST_MKSA_METRIC_TON ;
-        const long double UkTon     = GSL_CONST_MKSA_UK_TON     ;
-        const long double TroyTon   = GSL_CONST_MKSA_TROY_OUNCE ;
-        const long double Carat     = GSL_CONST_MKSA_CARAT      ;
-      }
-
-      namespace Force
-      {
-        const long double Newton    = GSL_CONST_MKSA_NEWTON          ;
-        const long double Dyne      = GSL_CONST_MKSA_DYNE            ;
-        const long double Gram      = GSL_CONST_MKSA_GRAM_FORCE      ;
-        const long double Pound     = GSL_CONST_MKSA_POUND_FORCE     ;
-        const long double KiloPound = GSL_CONST_MKSA_KILOPOUND_FORCE ;
-        const long double Poundal   = GSL_CONST_MKSA_POUNDAL         ;
-      }
-
-      namespace Energy
-      {
-        const long double Joule      = GSL_CONST_MKSA_JOULE      ;
-        const long double ERG        = GSL_CONST_MKSA_ERG        ;
-        const long double Calorie    = GSL_CONST_MKSA_CALORIE    ;
-        const long double BTU        = GSL_CONST_MKSA_BTU        ;
-        const long double Therm      = GSL_CONST_MKSA_THERM      ;
-        const long double HorsePower = GSL_CONST_MKSA_HORSEPOWER ;
-      }
-
-      namespace Pressure
-      {
-        const long double Bar                = GSL_CONST_MKSA_BAR              ;
-        const long double StandardAtmosphere = GSL_CONST_MKSA_STD_ATMOSPHERE   ;
-        const long double Torr               = GSL_CONST_MKSA_TORR             ;
-        const long double MercuryMeter       = GSL_CONST_MKSA_METER_OF_MERCURY ;
-        const long double MercuryInch        = GSL_CONST_MKSA_INCH_OF_MERCURY  ;
-        const long double InchOfWater        = GSL_CONST_MKSA_INCH_OF_WATER    ;
-        const long double PSI                = GSL_CONST_MKSA_PSI              ;
-      }
-
-      namespace Viscosity
-      {
-        const long double Poise  = GSL_CONST_MKSA_POISE  ;
-        const long double Stokes = GSL_CONST_MKSA_STOKES ;
-      }
-
-      namespace Illumination
-      {
-        const long double Stilb       = GSL_CONST_MKSA_STILB       ;
-        const long double Lumen       = GSL_CONST_MKSA_LUMEN       ;
-        const long double Lux         = GSL_CONST_MKSA_LUX         ;
-        const long double Phot        = GSL_CONST_MKSA_PHOT        ;
-        const long double FootCandle  = GSL_CONST_MKSA_FOOTCANDLE  ;
-        const long double Lambert     = GSL_CONST_MKSA_LAMBERT     ;
-        const long double FootLambert = GSL_CONST_MKSA_FOOTLAMBERT ;
-      }
-
-      namespace Radioactivity
-      {
-        const long double Curie    = GSL_CONST_MKSA_CURIE    ;
-        const long double Roentgen = GSL_CONST_MKSA_ROENTGEN ;
-        const long double Rad      = GSL_CONST_MKSA_RAD      ;
-      }
-
-      namespace Prefixes
-      {
-        const long double Yotta = GSL_CONST_NUM_YOTTA ;
-        const long double Zetta = GSL_CONST_NUM_ZETTA ;
-        const long double Exa   = GSL_CONST_NUM_EXA   ;
-        const long double Peta  = GSL_CONST_NUM_PETA  ;
-        const long double Tera  = GSL_CONST_NUM_TERA  ;
-        const long double Giga  = GSL_CONST_NUM_GIGA  ;
-        const long double Mega  = GSL_CONST_NUM_MEGA  ;
-        const long double Kilo  = GSL_CONST_NUM_KILO  ;
-        const long double Milli = GSL_CONST_NUM_MILLI ;
-        const long double Micro = GSL_CONST_NUM_MICRO ;
-        const long double Nano  = GSL_CONST_NUM_NANO  ;
-        const long double Pico  = GSL_CONST_NUM_PICO  ;
-        const long double Femto = GSL_CONST_NUM_FEMTO ;
-        const long double Atto  = GSL_CONST_NUM_ATTO  ;
-        const long double Zepto = GSL_CONST_NUM_ZEPTO ;
-        const long double Yocto = GSL_CONST_NUM_YOCTO ;
-      }
-
-    }
 
   }
 
@@ -3434,5 +3253,5 @@ namespace Rishon
     CIOS        = 9979
   }                    ;
 }
-
+//////////////////////////////////////////////////////////////////////////////
 #endif

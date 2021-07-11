@@ -1,29 +1,33 @@
 /****************************************************************************
- *                                                                          *
- * Copyright (C) 2001 - 2015 Neutrino International Inc.                    *
- *                                                                          *
- * Author : Brian Lin <lin.foxman@gmail.com>, Skype: wolfram_lin            *
- *                                                                          *
- * Essentials is the base system of CIOS modules.                           *
- * This is migrated from <Base> of CIOS 1.5.11                              *
- *                                                                          *
+ *
+ * Copyright (C) 2001 ~ 2021
+ * 
+ *  Neutrino International Inc.
+ *  Oriphase Space Travelling Industry
+ *
+ * Author   : Brian Lin ( Foxman , Vladimir Lin , Vladimir Forest )
+ * E-mail   : lin.foxman@gmail.com
+ *          : lin.vladimir@gmail.com
+ *          : wolfram_lin@yahoo.com
+ *          : wolfram_lin@sina.com
+ *          : wolfram_lin@163.com
+ * Skype    : wolfram_lin
+ * WeChat   : 153-0271-7160
+ * WhatsApp : 153-0271-7160
+ * QQ       : lin.vladimir@gmail.com (2107437784)
+ * LINE     : lin-foxman
+ *
  ****************************************************************************/
-
-#ifndef QT_ESSENTIALMACROS_H
-#define QT_ESSENTIALMACROS_H
-
-#ifndef QT_STATIC
-#  if defined(QT_BUILD_ESSENTIALS_LIB)
-#    define Q_ESSENTIALS_EXPORT Q_DECL_EXPORT
-#  else
-#    define Q_ESSENTIALS_EXPORT Q_DECL_IMPORT
-#  endif
-#else
-#    define Q_ESSENTIALS_EXPORT
-#endif
-
-#define EXCITON_VERSION                1.6
-#define EXCITON_VERSION_STRING        "1.6"
+//////////////////////////////////////////////////////////////////////////////
+#ifndef QT_AITK_BASE_MACROS_H
+#define QT_AITK_BASE_MACROS_H
+//////////////////////////////////////////////////////////////////////////////
+#define QT_AITK_BASE_LIB 1
+#define QT_AITK_BASE_VERSION 202107112301
+//////////////////////////////////////////////////////////////////////////////
+#define AITK_VERSION                  2.0
+#define AITK_VERSION_STRING           "2.0"
+//////////////////////////////////////////////////////////////////////////////
 #define isLittleEndian                ( Q_BYTE_ORDER == Q_LITTLE_ENDIAN )
 #define isBigEndian                   ( Q_BYTE_ORDER == Q_BIG_ENDIAN    )
 #define isMacOSX                      ( Q_OS_MAC )
@@ -128,42 +132,42 @@
 #define DeclSQL                       SqlConnection & Connection
 #define ThreadClass(TC)               Thread::Data.Properties["Class"] = QVariant(QString(TC))
 #define WidgetClass                   if ( NULL != metaObject() ) ThreadClass(metaObject()->className())
-
+//////////////////////////////////////////////////////////////////////////////
 #define ConnectSQL(SC,SQL)       \
     N::SqlConnection SC(SQL)   ; \
     if (SC.open( __FUNCTION__ )) {
-
+//////////////////////////////////////////////////////////////////////////////
 #define DisconnectSQL(SC)        \
       SC.close()               ; \
     }                          ; \
     SC.remove()
-
+//////////////////////////////////////////////////////////////////////////////
 #define EnterSQL(SC,SQL)                                             \
     Bustle      (      )                                           ; \
     N::SqlConnection SC(SQL)                                       ; \
     if ( SC . open ( __FUNCTION__ , QtUUID::createUuidString() ) ) {
-
+//////////////////////////////////////////////////////////////////////////////
 #define ErrorSQL(SC,SQL) \
       SC.close ( ) ;     \
     } else               {
-
+//////////////////////////////////////////////////////////////////////////////
 #define LeaveSQL(SC,SQL) \
       SC.close ( ) ;     \
     } ;                  \
     SC.remove  ( ) ;     \
     Vacancy    ( ) ;
-
+//////////////////////////////////////////////////////////////////////////////
 #define nSqlDeleteUuid(SC,QQ,TT,uuid)               \
   {                                                 \
     QQ = SC.sql.DeleteFrom(TT,SC.WhereUuid(uuid)) ; \
     SC.Query(QQ)                                  ; \
   }
-
+//////////////////////////////////////////////////////////////////////////////
 #define nIsolatePainter(ClassName) \
     if (!EnterPainter()) return  ; \
     ClassName::paintEvent(event) ; \
     LeavePainter()               ;
-
+//////////////////////////////////////////////////////////////////////////////
 #define DockSignals                               \
   void attachDock  (QWidget           * widget  , \
                     QString             title   , \
@@ -171,7 +175,7 @@
                     Qt::DockWidgetAreas areas ) ; \
   void attachMdi   (QWidget * widget            , \
                     int       direction       )
-
+//////////////////////////////////////////////////////////////////////////////
 #define FastParkIn(Class,Widget,Parent,Plan,Action,SCOPE,Title,Position,Area) \
     Widget = new Class(Parent,Plan)                                 ;         \
     Widget-> Trigger = Action                                       ;         \
@@ -179,17 +183,17 @@
     Widget-> Docking(Parent,Title,Position,Area)                    ;         \
     Action-> setChecked(Widget->isDocking())                        ;         \
     connect(Action,SIGNAL(toggled(bool)),Widget,SLOT(DockIn(bool))) ;
-
+//////////////////////////////////////////////////////////////////////////////
 #define nNewWindow(nxClassName,nxWindow) \
   nxClassName * nxWindow = new nxClassName(Mdi,plan)
-
+//////////////////////////////////////////////////////////////////////////////
 #define BerthIn(ClassName,VariableName,Alignment)                     \
   ClassName * VariableName = new ClassName ( Container ( ) , plan ) ; \
   Parking ( VariableName , Alignment )
-
+//////////////////////////////////////////////////////////////////////////////
 #define NewVcf(vcfClass,vcf,vcfWidget,vcfParent)                   \
   vcfClass * vcf = new vcfClass ( vcfWidget , vcfParent , plan ) ; \
   Scene . addItem               ( vcf                          ) ; \
   addItem                       ( vcf , vcfParent              )
-
+//////////////////////////////////////////////////////////////////////////////
 #endif

@@ -18,6 +18,8 @@
  * LINE     : lin-foxman
  *
  ****************************************************************************/
+#include "qtaitkamacros.h"
+#include "qtaitkanamespaces.h"
 #include "qtaitkbase.h"
 //////////////////////////////////////////////////////////////////////////////
 QT_BEGIN_NAMESPACE
