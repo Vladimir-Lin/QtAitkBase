@@ -10,8 +10,8 @@ load(qt_build_config)
 load(qt_module)
 
 INCLUDEPATH += $${PWD}
-HEADERS     += $${PWD}/qtaitkmacros.h
-HEADERS     += $${PWD}/qtaitknamespaces.h
+HEADERS     += $${PWD}/qtaitk_macros.h
+HEADERS     += $${PWD}/qtaitk_namespaces.h
 HEADERS     += $${PWD}/qtaitkbase.h
 
 SOURCES     += $${PWD}/qtaitkbase.cpp
