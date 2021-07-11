@@ -1,0 +1,14 @@
+# SOURCES += $${PWD}/Strings.cpp
+SOURCES += $${PWD}/Anything.cpp
+SOURCES += $${PWD}/BooleanArray.cpp
+# SOURCES += $${PWD}/StreamHeader.cpp
+# SOURCES += $${PWD}/Transformer.cpp
+# SOURCES += $${PWD}/TransformManager.cpp
+# SOURCES += $${PWD}/nScriptableByteArray.cpp
+# SOURCES += $${PWD}/nMutexz.cpp
+# SOURCES += $${PWD}/nScriptableMutexz.cpp
+# SOURCES += $${PWD}/nScriptableTransformer.cpp
+# SOURCES += $${PWD}/nScriptStrings.cpp
+# SOURCES += $${PWD}/TraditionalSimplified.cpp
+# SOURCES += $${PWD}/nStreamStrings.cpp
+SOURCES += $${PWD}/nTimeBits.cpp

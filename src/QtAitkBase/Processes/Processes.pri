@@ -1,0 +1,10 @@
+# SOURCES += $${PWD}/nProcess.cpp
+# SOURCES += $${PWD}/nProcessThread.cpp
+# SOURCES += $${PWD}/nScriptManager.cpp
+# SOURCES += $${PWD}/nProgressReporter.cpp
+# SOURCES += $${PWD}/nVirtualProgress.cpp
+# SOURCES += $${PWD}/nSyntaxDispatcher.cpp
+# SOURCES += $${PWD}/nCpuTrigger.cpp
+# SOURCES += $${PWD}/nCpuProfiler.cpp
+# SOURCES += $${PWD}/nComputing.cpp
+SOURCES += $${PWD}/nDestroyer.cpp

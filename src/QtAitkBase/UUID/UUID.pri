@@ -1,0 +1,1 @@
+# SOURCES += $${PWD}/nUuidSyntax.cpp
